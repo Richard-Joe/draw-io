@@ -1,47 +1,255 @@
-<mxfile host="app.diagrams.net" modified="2022-03-27T13:39:42.785Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36" etag="OZLuP1qRYVc52vMcTJqd" version="17.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-27T15:41:03.349Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36" etag="rgIQyXcpG4HtHuKHd0bj" version="17.2.4" type="github">
   <diagram id="H_ioEES7vWCsqqMW2Ptc" name="Page-1">
-    <mxGraphModel dx="2249" dy="1963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3076" dy="1963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Hi7X-ocCdE_USJ45hYvA-24" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Manager&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span style=&quot;&quot;&gt;+&amp;nbsp;cluster.Cluster&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span style=&quot;&quot;&gt;+&amp;nbsp;Add(Runnable): error&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;&quot;&gt;+&amp;nbsp;Start(ctx context.Context): error&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span style=&quot;&quot;&gt;+ ...&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
-          <mxGeometry x="160" y="-40" width="280" height="120" as="geometry" />
+        <mxCell id="Hi7X-ocCdE_USJ45hYvA-24" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Manager&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span style=&quot;&quot;&gt;+&amp;nbsp;cluster.Cluster&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span style=&quot;&quot;&gt;+&amp;nbsp;Add(Runnable): error&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;&quot;&gt;+&amp;nbsp;Start(ctx context.Context): error&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span style=&quot;&quot;&gt;+ ...&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" parent="1" vertex="1">
+          <mxGeometry x="880" y="480" width="280" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="Hi7X-ocCdE_USJ45hYvA-25" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Cluster&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span style=&quot;&quot;&gt;+&amp;nbsp;GetConfig():&amp;nbsp;*rest.Config&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span style=&quot;&quot;&gt;+&amp;nbsp;GetClient():&amp;nbsp;client.Client&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span style=&quot;&quot;&gt;+&amp;nbsp;GetCache(): cache.Cache&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;&quot;&gt;+&amp;nbsp;Start(ctx context.Context): error&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span style=&quot;&quot;&gt;+ ...&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-200" y="-40" width="280" height="120" as="geometry" />
+        <mxCell id="Hi7X-ocCdE_USJ45hYvA-25" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Cluster&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span style=&quot;&quot;&gt;+&amp;nbsp;GetConfig():&amp;nbsp;*rest.Config&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span style=&quot;&quot;&gt;+&amp;nbsp;GetClient():&amp;nbsp;client.Client&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span style=&quot;&quot;&gt;+&amp;nbsp;GetCache(): cache.Cache&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;&quot;&gt;+&amp;nbsp;Start(ctx context.Context): error&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span style=&quot;&quot;&gt;+ ...&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" parent="1" vertex="1">
+          <mxGeometry y="140" width="330" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="Hi7X-ocCdE_USJ45hYvA-26" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;/p&gt;&lt;div style=&quot;text-align: center ; background-color: rgb(255 , 255 , 255) ; font-size: 9.8pt&quot;&gt;&lt;b&gt;Runnable&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+&amp;nbsp;&lt;/span&gt;&lt;span&gt;Start(ctx context.Context): error&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
-          <mxGeometry x="520" y="-120" width="280" height="70" as="geometry" />
+        <mxCell id="Hi7X-ocCdE_USJ45hYvA-26" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;/p&gt;&lt;div style=&quot;text-align: center ; background-color: rgb(255 , 255 , 255) ; font-size: 9.8pt&quot;&gt;&lt;b&gt;Runnable&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+&amp;nbsp;&lt;/span&gt;&lt;span&gt;Start(ctx context.Context): error&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" parent="1" vertex="1">
+          <mxGeometry x="840" y="-20" width="280" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Hi7X-ocCdE_USJ45hYvA-34" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Struct&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;controllerManager&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ runnables: *runnables&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ cluster: cluster.Cluster&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ ...&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
-          <mxGeometry x="160" y="160" width="280" height="110" as="geometry" />
+        <mxCell id="Hi7X-ocCdE_USJ45hYvA-34" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Struct&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;controllerManager&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px ; font-size: 15px&quot;&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;+ runnables: *runnables&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px ; font-size: 15px&quot;&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;+ cluster: cluster.Cluster&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ ...&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" parent="1" vertex="1">
+          <mxGeometry x="880" y="680" width="280" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="Hi7X-ocCdE_USJ45hYvA-35" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Struct&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;runnables&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ Webhooks:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; font-size: 9.8pt&quot;&gt;*runnableGroup&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ Caches:&amp;nbsp;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; font-size: 9.8pt&quot;&gt;*runnableGroup&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ LeaderElection:&amp;nbsp;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; font-size: 9.8pt&quot;&gt;*runnableGroup&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; font-size: 9.8pt&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ Others:&amp;nbsp;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; font-size: 9.8pt&quot;&gt;*runnableGroup&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
-          <mxGeometry x="520" y="240" width="280" height="110" as="geometry" />
+        <mxCell id="Hi7X-ocCdE_USJ45hYvA-35" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Struct&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;runnables&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ Webhooks:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; font-size: 9.8pt&quot;&gt;*runnableGroup&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ Caches:&amp;nbsp;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; font-size: 9.8pt&quot;&gt;*runnableGroup&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ LeaderElection:&amp;nbsp;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; font-size: 9.8pt&quot;&gt;*runnableGroup&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; font-size: 9.8pt&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ Others:&amp;nbsp;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; font-size: 9.8pt&quot;&gt;*runnableGroup&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="340" width="280" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="Hi7X-ocCdE_USJ45hYvA-36" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Struct&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;cluster&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ config: *rest.Config&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ scheme: *runtime.Scheme&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ cache: cahce.Cache&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ client: client.Client&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ apiReader: client.Reader&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ recorderProvider: *intrec.Provider&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ mapper: meta.RESTMapper&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ ...&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-200" y="160" width="280" height="160" as="geometry" />
+        <mxCell id="Hi7X-ocCdE_USJ45hYvA-36" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Struct&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;cluster&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;+ config: *rest.Config&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;+ scheme: *runtime.Scheme&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px ; font-size: 15px&quot;&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;+ apiReader: client.Reader&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px ; font-size: 15px&quot;&gt;&lt;span&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;+ client: client.Client&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px ; font-size: 15px&quot;&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;+ cache: cache.Cache&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;+ recorderProvider: *intrec.Provider&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px ; font-size: 14px&quot;&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;+ mapper: meta.RESTMapper&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ ...&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" parent="1" vertex="1">
+          <mxGeometry y="340" width="330" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="Hi7X-ocCdE_USJ45hYvA-37" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="Hi7X-ocCdE_USJ45hYvA-36" target="Hi7X-ocCdE_USJ45hYvA-25">
+        <mxCell id="Hi7X-ocCdE_USJ45hYvA-37" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="Hi7X-ocCdE_USJ45hYvA-36" target="Hi7X-ocCdE_USJ45hYvA-25" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="-110" y="190" as="sourcePoint" />
-            <mxPoint x="50" y="190" as="targetPoint" />
+            <mxPoint x="90" y="370" as="sourcePoint" />
+            <mxPoint x="250" y="370" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Hi7X-ocCdE_USJ45hYvA-38" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="Hi7X-ocCdE_USJ45hYvA-34" target="Hi7X-ocCdE_USJ45hYvA-24">
+        <mxCell id="Hi7X-ocCdE_USJ45hYvA-38" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="Hi7X-ocCdE_USJ45hYvA-34" target="Hi7X-ocCdE_USJ45hYvA-24" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="-50" y="170" as="sourcePoint" />
-            <mxPoint x="-50" y="90" as="targetPoint" />
+            <mxPoint x="670" y="690" as="sourcePoint" />
+            <mxPoint x="670" y="610" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Hi7X-ocCdE_USJ45hYvA-39" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Client&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+&amp;nbsp;Reader&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+&amp;nbsp;Writer&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+&amp;nbsp;StatusClient&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ ...&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
+        <mxCell id="Hi7X-ocCdE_USJ45hYvA-39" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Client&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+&amp;nbsp;Reader&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+&amp;nbsp;Writer&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+&amp;nbsp;StatusClient&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ ...&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" parent="1" vertex="1">
           <mxGeometry x="-560" y="-40" width="280" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="Hi7X-ocCdE_USJ45hYvA-40" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Reader&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ Get(...): error&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ List(...): error&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ ...&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-600" y="-240" width="160" height="90" as="geometry" />
+        <mxCell id="Hi7X-ocCdE_USJ45hYvA-40" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Reader&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ Get(...): error&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ List(...): error&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-720" y="-240" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Hi7X-ocCdE_USJ45hYvA-41" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Writer&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ Create(...): error&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ Delete(...): error&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ Update(...): error&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ Patch(...): error&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ DeleteAllof(...): error&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-400" y="-240" width="190" height="120" as="geometry" />
+        <mxCell id="Hi7X-ocCdE_USJ45hYvA-41" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Writer&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ Create(...): error&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ Delete(...): error&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ Update(...): error&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ Patch(...): error&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ DeleteAllof(...): error&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-520" y="-240" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-1" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;StatusClient&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ Status(): StatusWriter&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-280" y="-240" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-2" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="Hi7X-ocCdE_USJ45hYvA-39" target="Hi7X-ocCdE_USJ45hYvA-40">
+          <mxGeometry x="-0.8824" width="160" relative="1" as="geometry">
+            <mxPoint x="-780" y="20" as="sourcePoint" />
+            <mxPoint x="-620" y="20" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-420" y="-80" />
+              <mxPoint x="-640" y="-80" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-3" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="Hi7X-ocCdE_USJ45hYvA-39" target="4qnyWKhFBlUaW0UAAZof-1">
+          <mxGeometry x="-0.0588" y="10" width="160" relative="1" as="geometry">
+            <mxPoint x="-410" y="-30" as="sourcePoint" />
+            <mxPoint x="-630" y="-150" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-420" y="-80" />
+              <mxPoint x="-180" y="-80" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-4" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="Hi7X-ocCdE_USJ45hYvA-41">
+          <mxGeometry x="-0.0588" y="10" width="160" relative="1" as="geometry">
+            <mxPoint x="-420" y="-40" as="sourcePoint" />
+            <mxPoint x="-170" y="-160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-420" y="-80" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-5" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Cache&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ client.Reader&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ Informers&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-960" y="-40" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-6" value="&lt;p style=&quot;margin: 4px 0px 0px ; text-align: center&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Informers&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;+ GetInformer(...): (Informer, error)&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;+ GetInformerForKind(...): (Informer, error)&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;+&amp;nbsp;Start(ctx context.Context): error&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;+ WaitForCacheSync(...): bool&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;+&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;client.FieldIndexer&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1120" y="-240" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-7" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;fontFamily=Lucida Console;fontSize=12;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="4qnyWKhFBlUaW0UAAZof-5" target="4qnyWKhFBlUaW0UAAZof-6">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-1050" y="180" as="sourcePoint" />
+            <mxPoint x="-890" y="180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-820" y="-80" />
+              <mxPoint x="-960" y="-80" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-8" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;fontFamily=Lucida Console;fontSize=12;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="Hi7X-ocCdE_USJ45hYvA-40">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-820" y="-40" as="sourcePoint" />
+            <mxPoint x="-950" y="-110" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-820" y="-80" />
+              <mxPoint x="-680" y="-80" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-9" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Struct&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;informerCache&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ *internal.InformersMap&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-960" y="160" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-10" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontFamily=Lucida Console;fontSize=12;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="4qnyWKhFBlUaW0UAAZof-9" target="4qnyWKhFBlUaW0UAAZof-5">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-820" y="150" as="sourcePoint" />
+            <mxPoint x="-660" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-11" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Provider&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;+ GetEventRecorderFor(name string) record.EventRecorder&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1520" y="-40" width="440" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-12" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Struct&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Provider&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ ...&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1440" y="160" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-13" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontFamily=Lucida Console;fontSize=12;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="4qnyWKhFBlUaW0UAAZof-12" target="4qnyWKhFBlUaW0UAAZof-11">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-1540" y="100" as="sourcePoint" />
+            <mxPoint x="-1380" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-14" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Struct&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;runnableGroup&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ startQueue: &lt;span style=&quot;font-size: 13.0667px ; background-color: rgb(255 , 255 , 255)&quot;&gt;[]*readyRunnable&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ startReadyCh: &lt;span style=&quot;font-size: 13.0667px ; background-color: rgb(255 , 255 , 255)&quot;&gt;chan *readyRunnable&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ ch: chan&amp;nbsp;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; font-size: 9.8pt&quot;&gt;*readyRunnable&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; font-size: 9.8pt&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ ...&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="140" width="280" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-15" value="" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;fontFamily=Lucida Console;fontSize=12;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="Hi7X-ocCdE_USJ45hYvA-35" target="4qnyWKhFBlUaW0UAAZof-14">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="830" y="470" as="sourcePoint" />
+            <mxPoint x="990" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-17" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Struct&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;readyRunnable&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ Runnable&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ ...&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="-20" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-18" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;fontFamily=Lucida Console;fontSize=12;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="4qnyWKhFBlUaW0UAAZof-17" target="Hi7X-ocCdE_USJ45hYvA-26">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="580" y="-30" as="sourcePoint" />
+            <mxPoint x="430" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-19" value="" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;fontFamily=Lucida Console;fontSize=12;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="4qnyWKhFBlUaW0UAAZof-17">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="580" y="140" as="sourcePoint" />
+            <mxPoint x="590" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-20" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="4qnyWKhFBlUaW0UAAZof-14" target="Hi7X-ocCdE_USJ45hYvA-26">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="230" y="350" as="sourcePoint" />
+            <mxPoint x="230" y="270" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="980" y="195" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-21" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Struct&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;delegatingClient&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+&amp;nbsp;Reader&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+&amp;nbsp;Writer&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+&amp;nbsp;StatusClient&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ ...&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-600" y="160" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-22" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontFamily=Lucida Console;entryX=0.143;entryY=1.025;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="4qnyWKhFBlUaW0UAAZof-21" target="Hi7X-ocCdE_USJ45hYvA-39">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="150" y="370" as="sourcePoint" />
+            <mxPoint x="150" y="290" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-24" value="" style="endArrow=classic;dashed=1;html=1;rounded=0;fontFamily=Lucida Console;fontSize=12;endFill=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-440" y="190" as="sourcePoint" />
+            <mxPoint x="-10" y="440" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-400" y="190" />
+              <mxPoint x="-400" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-25" value="" style="endArrow=classic;dashed=1;html=1;rounded=0;fontFamily=Lucida Console;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endFill=1;" edge="1" parent="1" source="4qnyWKhFBlUaW0UAAZof-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-270" y="200" as="sourcePoint" />
+            <mxPoint x="-10" y="460" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-640" y="195" />
+              <mxPoint x="-640" y="320" />
+              <mxPoint x="-640" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-26" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Struct&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;client&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ ...&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-360" y="160" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-27" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontFamily=Lucida Console;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.893;entryY=1.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="4qnyWKhFBlUaW0UAAZof-26" target="Hi7X-ocCdE_USJ45hYvA-39">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-510" y="170" as="sourcePoint" />
+            <mxPoint x="-320" y="90" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-28" value="" style="endArrow=classic;dashed=1;html=1;rounded=0;fontFamily=Lucida Console;fontSize=12;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="4qnyWKhFBlUaW0UAAZof-26">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-430" y="200" as="sourcePoint" />
+            <mxPoint x="-10" y="420" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-200" y="195" />
+              <mxPoint x="-200" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-29" value="" style="endArrow=classic;dashed=1;html=1;rounded=0;fontFamily=Lucida Console;fontSize=12;exitX=1.011;exitY=0.414;exitDx=0;exitDy=0;endFill=1;exitPerimeter=0;" edge="1" parent="1" source="4qnyWKhFBlUaW0UAAZof-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-670" y="205" as="sourcePoint" />
+            <mxPoint x="-10" y="480" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-1080" y="189" />
+              <mxPoint x="-1080" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-30" value="" style="endArrow=classic;dashed=1;html=1;rounded=0;fontFamily=Lucida Console;fontSize=12;endFill=1;exitX=1.003;exitY=0.172;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Hi7X-ocCdE_USJ45hYvA-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="540" as="sourcePoint" />
+            <mxPoint x="870" y="750" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="380" y="370" />
+              <mxPoint x="380" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-31" value="" style="endArrow=classic;dashed=1;html=1;rounded=0;fontFamily=Lucida Console;fontSize=12;endFill=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="Hi7X-ocCdE_USJ45hYvA-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340.9899999999998" y="380.96000000000004" as="sourcePoint" />
+            <mxPoint x="870" y="730" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="760" y="368" />
+              <mxPoint x="760" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-32" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Reconciler&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ Reconciler(&lt;/span&gt;&lt;span&gt;context.Context, Request&lt;/span&gt;&lt;span&gt;): (Result, error)&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="940" width="410" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-33" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Struct&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;CRDReconciler&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;+ client.Client&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;+ Scheme: *runtime.Scheme&lt;/font&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
+          <mxGeometry x="375" y="1140" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4qnyWKhFBlUaW0UAAZof-34" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="4qnyWKhFBlUaW0UAAZof-33" target="4qnyWKhFBlUaW0UAAZof-32">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="100" y="1150" as="sourcePoint" />
+            <mxPoint x="100" y="1070" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
