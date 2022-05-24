@@ -1,11 +1,14 @@
-<mxfile host="app.diagrams.net" modified="2022-05-24T09:52:08.689Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36" etag="p22KAkJDZ8CeV-MSR0WV" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-24T12:05:53.881Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36" etag="WVJ-68P-ep5LY7lnRvxG" version="17.4.6" type="github">
   <diagram id="pOSydsDMV48P04ZVQpbY" name="Page-1">
     <mxGraphModel dx="1278" dy="1752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-42" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="827" y="1040" width="240" height="240" as="geometry" />
+        </mxCell>
         <mxCell id="HttW45ZmrMAIBHT3xHbi-31" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="880" y="530" width="540" height="610" as="geometry" />
+          <mxGeometry x="827" y="380" width="540" height="610" as="geometry" />
         </mxCell>
         <mxCell id="HttW45ZmrMAIBHT3xHbi-9" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
           <mxGeometry x="330" y="770" width="310" height="240" as="geometry" />
@@ -71,43 +74,43 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="HttW45ZmrMAIBHT3xHbi-15" value="InstallAPIs" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1010" y="650" width="120" height="40" as="geometry" />
+          <mxGeometry x="957" y="500" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="HttW45ZmrMAIBHT3xHbi-16" value="batchrest&amp;lt;jobs, cronjobs&amp;gt;&lt;br&gt;appsrest&amp;lt;deployments, daemonsets&amp;gt;&lt;br&gt;...&lt;br&gt;&lt;br&gt;" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.cloud_callout;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="1140" y="540" width="260" height="130" as="geometry" />
+          <mxGeometry x="1087" y="390" width="260" height="130" as="geometry" />
         </mxCell>
         <mxCell id="HttW45ZmrMAIBHT3xHbi-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HttW45ZmrMAIBHT3xHbi-17" target="HttW45ZmrMAIBHT3xHbi-19">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="HttW45ZmrMAIBHT3xHbi-17" value="InstallAPIGroups" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1010" y="720" width="120" height="40" as="geometry" />
+          <mxGeometry x="957" y="570" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="HttW45ZmrMAIBHT3xHbi-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HttW45ZmrMAIBHT3xHbi-19" target="HttW45ZmrMAIBHT3xHbi-21">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="HttW45ZmrMAIBHT3xHbi-19" value="installAPIResources" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1010" y="790" width="120" height="40" as="geometry" />
+          <mxGeometry x="957" y="640" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="HttW45ZmrMAIBHT3xHbi-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HttW45ZmrMAIBHT3xHbi-21" target="HttW45ZmrMAIBHT3xHbi-23">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="HttW45ZmrMAIBHT3xHbi-21" value="InstallREST" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1010" y="860" width="120" height="40" as="geometry" />
+          <mxGeometry x="957" y="710" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="HttW45ZmrMAIBHT3xHbi-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HttW45ZmrMAIBHT3xHbi-23" target="HttW45ZmrMAIBHT3xHbi-25">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="HttW45ZmrMAIBHT3xHbi-23" value="installer.Install" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1010" y="930" width="120" height="40" as="geometry" />
+          <mxGeometry x="957" y="780" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="HttW45ZmrMAIBHT3xHbi-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HttW45ZmrMAIBHT3xHbi-25" target="HttW45ZmrMAIBHT3xHbi-27">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="HttW45ZmrMAIBHT3xHbi-25" value="registerResourceHandlers" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="990" y="1000" width="160" height="40" as="geometry" />
+          <mxGeometry x="937" y="850" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="HttW45ZmrMAIBHT3xHbi-27" value="把REST接口实现的Creater、Lister、Getter、Watcher、...等回调接口，跟web的POST、GET、WATCH等hangler关联起来。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="920" y="1070" width="300" height="60" as="geometry" />
+          <mxGeometry x="867" y="920" width="300" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HttW45ZmrMAIBHT3xHbi-29" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HttW45ZmrMAIBHT3xHbi-5" target="HttW45ZmrMAIBHT3xHbi-31">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -125,16 +128,28 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="HttW45ZmrMAIBHT3xHbi-32" value="NonBlockingRun" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="900" y="1240" width="120" height="40" as="geometry" />
+          <mxGeometry x="887" y="1060" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="HttW45ZmrMAIBHT3xHbi-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HttW45ZmrMAIBHT3xHbi-33" target="HttW45ZmrMAIBHT3xHbi-35">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="HttW45ZmrMAIBHT3xHbi-33" value="s.SecureServingInfo.Serve" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="870" y="1320" width="180" height="40" as="geometry" />
+          <mxGeometry x="857" y="1140" width="180" height="40" as="geometry" />
         </mxCell>
         <mxCell id="HttW45ZmrMAIBHT3xHbi-35" value="server.Serve(listener)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="870" y="1400" width="180" height="40" as="geometry" />
+          <mxGeometry x="857" y="1220" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-43" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HttW45ZmrMAIBHT3xHbi-13" target="HttW45ZmrMAIBHT3xHbi-42">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="920" as="sourcePoint" />
+            <mxPoint x="833.7600000000002" y="993.29" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-44" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="HttW45ZmrMAIBHT3xHbi-13" target="HttW45ZmrMAIBHT3xHbi-42">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="1120" as="sourcePoint" />
+            <mxPoint x="837" y="1050" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
