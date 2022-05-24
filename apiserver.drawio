@@ -1,9 +1,15 @@
-<mxfile host="app.diagrams.net" modified="2022-05-23T07:05:14.447Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36" etag="qxLJf_bH26TB7raqU6IX" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-24T09:52:08.689Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36" etag="p22KAkJDZ8CeV-MSR0WV" version="17.4.6" type="github">
   <diagram id="pOSydsDMV48P04ZVQpbY" name="Page-1">
-    <mxGraphModel dx="1038" dy="1718" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1278" dy="1752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-31" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="530" width="540" height="610" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-9" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="770" width="310" height="240" as="geometry" />
+        </mxCell>
         <mxCell id="H5yTHJ9wlslfovT43Fut-1" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;ServerRunOptions&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ GenericServerRunOptions: *genericoptions.ServerRunOptions&lt;br&gt;+ Etcd: *genericoptions.EtcdOptions&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+&amp;nbsp;SecureServing:&amp;nbsp;*genericoptions.SecureServingOptionsWithLoopback&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+&amp;nbsp;Admission:&amp;nbsp;*kubeoptions.AdmissionOptions&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ Authentication:&amp;nbsp;*kubeoptions.BuiltInAuthenticationOptions&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+&amp;nbsp;Authorization:&amp;nbsp;*kubeoptions.BuiltInAuthorizationOptions&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ ...&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ Validate()&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
           <mxGeometry x="370" y="200" width="390" height="180" as="geometry" />
         </mxCell>
@@ -19,11 +25,116 @@
         <mxCell id="lCR1ftYjXerYWlMZq8yE-3" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;struct&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;AdmissionOptions&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ GenericAdmission: *genericoptions.AdmissionOptions&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ ...&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ ApplyTo()&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+&amp;nbsp;Validate()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
           <mxGeometry x="840" y="20" width="320" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="DM5HG3-7ziXzEXTVug2R-1" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;struct&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;BuiltInAuthenticationOptions&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ ClientCert: *genericoptions.ClientCertAuthenticationOptions&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ ServiceAccounts:&amp;nbsp;*ServiceAccountAuthenticationOptions&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ ...&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ ApplyTo()&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+&amp;nbsp;Validate()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
+        <mxCell id="DM5HG3-7ziXzEXTVug2R-1" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;struct&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;BuiltInAuthenticationOptions&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ ClientCert: *genericoptions.ClientCertAuthenticationOptions&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ ServiceAccounts:&amp;nbsp;*ServiceAccountAuthenticationOptions&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ ...&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ ApplyTo()&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+&amp;nbsp;Validate()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
           <mxGeometry x="1200" width="360" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="DM5HG3-7ziXzEXTVug2R-2" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;struct&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;BuiltInAuthorizationOptions&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ Modes: []string&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ WebhookConfigFile:&amp;nbsp;string&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ ...&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ ToAuthorizationConfig()&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+&amp;nbsp;Validate()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
+        <mxCell id="DM5HG3-7ziXzEXTVug2R-2" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;struct&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;BuiltInAuthorizationOptions&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ Modes: []string&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ WebhookConfigFile:&amp;nbsp;string&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ ...&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ ToAuthorizationConfig()&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+&amp;nbsp;Validate()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
           <mxGeometry x="1600" width="360" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HttW45ZmrMAIBHT3xHbi-2" target="HttW45ZmrMAIBHT3xHbi-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-2" value="Run" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="690" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HttW45ZmrMAIBHT3xHbi-3" target="HttW45ZmrMAIBHT3xHbi-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-3" value="createAPIExtensionsServer" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="790" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HttW45ZmrMAIBHT3xHbi-5" target="HttW45ZmrMAIBHT3xHbi-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-5" value="CreateKubeAPIServer" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="870" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HttW45ZmrMAIBHT3xHbi-7" target="HttW45ZmrMAIBHT3xHbi-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-7" value="createAggregatorServer" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="950" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-10" value="CreateServerChain" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="750" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HttW45ZmrMAIBHT3xHbi-11" target="HttW45ZmrMAIBHT3xHbi-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-11" value="server.PrepareRun" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="1030" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-13" value="prepared.Run" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="1110" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HttW45ZmrMAIBHT3xHbi-15" target="HttW45ZmrMAIBHT3xHbi-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-15" value="InstallAPIs" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="650" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-16" value="batchrest&amp;lt;jobs, cronjobs&amp;gt;&lt;br&gt;appsrest&amp;lt;deployments, daemonsets&amp;gt;&lt;br&gt;...&lt;br&gt;&lt;br&gt;" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.cloud_callout;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="540" width="260" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HttW45ZmrMAIBHT3xHbi-17" target="HttW45ZmrMAIBHT3xHbi-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-17" value="InstallAPIGroups" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="720" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HttW45ZmrMAIBHT3xHbi-19" target="HttW45ZmrMAIBHT3xHbi-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-19" value="installAPIResources" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="790" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HttW45ZmrMAIBHT3xHbi-21" target="HttW45ZmrMAIBHT3xHbi-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-21" value="InstallREST" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="860" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HttW45ZmrMAIBHT3xHbi-23" target="HttW45ZmrMAIBHT3xHbi-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-23" value="installer.Install" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="930" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HttW45ZmrMAIBHT3xHbi-25" target="HttW45ZmrMAIBHT3xHbi-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-25" value="registerResourceHandlers" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="1000" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-27" value="把REST接口实现的Creater、Lister、Getter、Watcher、...等回调接口，跟web的POST、GET、WATCH等hangler关联起来。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="1070" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-29" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HttW45ZmrMAIBHT3xHbi-5" target="HttW45ZmrMAIBHT3xHbi-31">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="870" as="sourcePoint" />
+            <mxPoint x="880" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-30" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=-0.006;entryY=0.989;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="HttW45ZmrMAIBHT3xHbi-5" target="HttW45ZmrMAIBHT3xHbi-31">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="880" as="sourcePoint" />
+            <mxPoint x="880" y="1090" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HttW45ZmrMAIBHT3xHbi-32" target="HttW45ZmrMAIBHT3xHbi-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-32" value="NonBlockingRun" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="1240" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HttW45ZmrMAIBHT3xHbi-33" target="HttW45ZmrMAIBHT3xHbi-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-33" value="s.SecureServingInfo.Serve" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="1320" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HttW45ZmrMAIBHT3xHbi-35" value="server.Serve(listener)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="1400" width="180" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
