@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-08T03:46:41.712Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="XZD7z1_yBEYFIUpvN8ra" version="20.8.18" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-08T06:30:25.043Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="sGLrssPtmSzAp3e5jcCI" version="20.8.18" type="github">
   <diagram name="第 1 页" id="lh7ydzCc7ynA8F5_acGI">
     <mxGraphModel dx="1050" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -337,7 +337,7 @@
           <mxGeometry x="1355" y="1190" width="50" height="30" as="geometry" />
         </mxCell>
         <mxCell id="7DXoSsNHb3DOnM7rZHPf-127" value="tick trigger" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1075" y="1270" width="80" height="30" as="geometry" />
+          <mxGeometry x="1080" y="1270" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="7DXoSsNHb3DOnM7rZHPf-128" value="syncProxyRules" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;strokeWidth=1;fillColor=default;" vertex="1" parent="1">
           <mxGeometry x="1160" y="910" width="120" height="40" as="geometry" />
@@ -354,8 +354,8 @@
             <mxPoint x="1170" y="940" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7DXoSsNHb3DOnM7rZHPf-131" value="创建bfr时，注册刷新规则回调函数。&lt;br&gt;调用时机：1、监听到资源变化是回调；2、定时刷新" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1240" y="910" width="300" height="40" as="geometry" />
+        <mxCell id="7DXoSsNHb3DOnM7rZHPf-131" value="创建bfr时，注册刷新规则回调函数。&lt;br&gt;调用时机：1、监听到资源变化时回调刷新；2、定时刷新" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="910" width="320" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
