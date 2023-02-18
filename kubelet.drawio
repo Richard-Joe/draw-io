@@ -1,1 +1,148 @@
-<mxfile host="app.diagrams.net" modified="2023-02-18T12:56:13.963Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" version="20.8.20" etag="H6MfBZAB8Sb9Dt7d4L71" type="github"><diagram name="第 1 页" id="JYffCu2N8yiNMYiJjvRk">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-02-18T14:16:11.146Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="JvkawSVXQ0b-_19MSsRB" version="20.8.20" type="github">
+  <diagram name="第 1 页" id="JYffCu2N8yiNMYiJjvRk">
+    <mxGraphModel dx="1912" dy="1061" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QyVC96XnyGbgSUHbo8Ag-1" target="QyVC96XnyGbgSUHbo8Ag-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-1" value="kubelet" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="70" y="210" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QyVC96XnyGbgSUHbo8Ag-6" target="QyVC96XnyGbgSUHbo8Ag-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-6" value="syncLoop" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="235" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-8" value="kubelet完成初始化和内部组件的启动后，就进入主循环" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="190" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-13" value="syncLoopIteration" style="rounded=0;whiteSpace=wrap;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="440" y="235" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="QyVC96XnyGbgSUHbo8Ag-15" target="QyVC96XnyGbgSUHbo8Ag-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-15" value="&lt;-configCh" style="rounded=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="640" y="235" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-16" value="&lt;-syncCh" style="rounded=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="640" y="330" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-17" value="&lt;-housekeepingCh" style="rounded=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="640" y="400" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-18" value="&lt;-plegCh" style="rounded=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="640" y="470" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-19" value="&lt;-liveness&#xa;&lt;-readiness&#xa;&lt;-startup" style="rounded=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="640" y="530" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="249.58" as="sourcePoint" />
+            <mxPoint x="640" y="249.58" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="QyVC96XnyGbgSUHbo8Ag-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="250" as="sourcePoint" />
+            <mxPoint x="650" y="259.58000000000004" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="345" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="QyVC96XnyGbgSUHbo8Ag-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="250" as="sourcePoint" />
+            <mxPoint x="650" y="315" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="415" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="QyVC96XnyGbgSUHbo8Ag-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="250" as="sourcePoint" />
+            <mxPoint x="650" y="365" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="485" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="QyVC96XnyGbgSUHbo8Ag-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="250" as="sourcePoint" />
+            <mxPoint x="650" y="415" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="555" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-27" value="定时器syncTicker负责同步Pod" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="740" y="330" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-28" value="定时器housekeepingTicker负责清理Pod" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="790" y="400" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-29" value="pleg子模块，周期性地向 container runtime 查询当前所有容器的状态，并与自身维护的 pods cache 信息进行对比，生成对应的 PodLifecycleEvent，输送到channel" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="750" y="465" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-30" value="健康检查的事件通知" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="730" y="540" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-31" value="PodConfig子模块，watch三种不同来源（File、Http、ApiServer）Pod的信息变化，一旦某个来源的 pod 信息发生了更新（创建/更新/删除），就会通知到这个channel，并执行对应的操作处理" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="730" y="160" width="250" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QyVC96XnyGbgSUHbo8Ag-33" target="QyVC96XnyGbgSUHbo8Ag-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-33" value="HandlePodAdditions" style="rounded=0;whiteSpace=wrap;labelBorderColor=none;html=0;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="235" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-35" value="比如操作是ADD" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1081" y="200" width="129" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-36" value="1、按照Pod创建时间排序，保证最先创建的Pod优先被处理；&#xa;2、先把Pod加入到 podManager（如果 podManager 找不到某个Pod，就认为这个Pod被删除了）；&#xa;3、如果是MirrorPod，就单独处理；&#xa;4、验证Pod能否准入，kubelet在初始化时注册了一些admitHandlers，这里进行回调；&#xa;5、把创建Pod的工作丢给podWorkers子模块做异步处理；&#xa;6、添加Pod到 probeManager 中，如果Pod定义了健康检查的probe，则开goroutine定期检测" style="rounded=0;whiteSpace=wrap;labelBorderColor=none;html=0;align=left;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="1320" y="175" width="340" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QyVC96XnyGbgSUHbo8Ag-38" target="QyVC96XnyGbgSUHbo8Ag-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-38" value="podWorkers" style="rounded=0;whiteSpace=wrap;labelBorderColor=none;html=0;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="417.5" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="QyVC96XnyGbgSUHbo8Ag-39" target="QyVC96XnyGbgSUHbo8Ag-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-39" value="chan podWork" style="strokeWidth=2;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1530" y="420" width="140" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-42" value="下发work" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="400" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-43" value="managePodLoop" style="rounded=0;whiteSpace=wrap;labelBorderColor=none;html=0;" vertex="1" parent="1">
+          <mxGeometry x="1790" y="480" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-45" value="goroutine对work进行处理" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1780" y="440" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-46" value="syncPodFn" style="rounded=0;whiteSpace=wrap;labelBorderColor=none;html=0;" vertex="1" parent="1">
+          <mxGeometry x="1995" y="480" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-47" value="创建podWorkers把回调注册为klet.syncPod" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1950" y="440" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-48" value="syncPod" style="rounded=0;whiteSpace=wrap;labelBorderColor=none;html=0;" vertex="1" parent="1">
+          <mxGeometry x="1995" y="530" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyVC96XnyGbgSUHbo8Ag-49" value="1、同步 podStatus 到 kubelet.statusManager；&#xa;2、" style="rounded=0;whiteSpace=wrap;labelBorderColor=none;html=0;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2160" y="530" width="260" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
