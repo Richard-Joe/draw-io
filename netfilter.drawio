@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-24T06:38:23.922Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="OTQoawODjfis0-Gvipl5" version="20.8.20" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-24T09:29:35.463Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="6oD4AHlgzA6cRSpmfc0q" version="20.8.20" type="github">
   <diagram name="第 1 页" id="0HF-bXw9sUiKlREXwIyp">
     <mxGraphModel dx="875" dy="1626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -110,7 +110,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="xlTnr0oYa22tqspzqVBi-42" value="变长结构，三部分组成：&lt;br&gt;1 * nf_hook_entries +&lt;br&gt;n * nf_hook_entry +&lt;br&gt;n * (*nf_hook_ops) +&lt;br&gt;1 * nf_hook_entries_rcu_head&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="800" y="130" width="180" height="70" as="geometry" />
+          <mxGeometry x="760" y="120" width="180" height="70" as="geometry" />
         </mxCell>
         <mxCell id="xlTnr0oYa22tqspzqVBi-43" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;shadow=0;glass=0;sketch=0;fillColor=default;gradientColor=none;" vertex="1" parent="1">
           <mxGeometry x="730" y="280" width="20" height="260" as="geometry" />
@@ -128,58 +128,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="xlTnr0oYa22tqspzqVBi-48" value="每个钩子点，占用一个数组索引" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="620" y="100" width="170" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="xlTnr0oYa22tqspzqVBi-64" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="1080" y="389" width="140" height="392" as="geometry" />
-        </mxCell>
-        <mxCell id="xlTnr0oYa22tqspzqVBi-49" value="struct nf_hook_ops" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=1;shadow=0;glass=0;sketch=0;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-64">
-          <mxGeometry width="140" height="182" as="geometry" />
-        </mxCell>
-        <mxCell id="xlTnr0oYa22tqspzqVBi-50" value="+ *hook" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-49">
-          <mxGeometry y="26" width="140" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="xlTnr0oYa22tqspzqVBi-51" value="+ *dev" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-49">
-          <mxGeometry y="52" width="140" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="xlTnr0oYa22tqspzqVBi-52" value="+ *priv" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-49">
-          <mxGeometry y="78" width="140" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="xlTnr0oYa22tqspzqVBi-53" value="+ pf" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-49">
-          <mxGeometry y="104" width="140" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="xlTnr0oYa22tqspzqVBi-54" value="+ hooknum" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-49">
-          <mxGeometry y="130" width="140" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="xlTnr0oYa22tqspzqVBi-55" value="+ priority" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-49">
-          <mxGeometry y="156" width="140" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="xlTnr0oYa22tqspzqVBi-56" value="struct nf_hook_ops" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=1;shadow=0;glass=0;sketch=0;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-64">
-          <mxGeometry y="210" width="140" height="182" as="geometry" />
-        </mxCell>
-        <mxCell id="xlTnr0oYa22tqspzqVBi-57" value="+ *hook" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-56">
-          <mxGeometry y="26" width="140" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="xlTnr0oYa22tqspzqVBi-58" value="+ *dev" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-56">
-          <mxGeometry y="52" width="140" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="xlTnr0oYa22tqspzqVBi-59" value="+ *priv" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-56">
-          <mxGeometry y="78" width="140" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="xlTnr0oYa22tqspzqVBi-60" value="+ pf" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-56">
-          <mxGeometry y="104" width="140" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="xlTnr0oYa22tqspzqVBi-61" value="+ hooknum" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-56">
-          <mxGeometry y="130" width="140" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="xlTnr0oYa22tqspzqVBi-62" value="+ priority" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-56">
-          <mxGeometry y="156" width="140" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="xlTnr0oYa22tqspzqVBi-63" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="xlTnr0oYa22tqspzqVBi-64" source="xlTnr0oYa22tqspzqVBi-56">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="180" y="240" as="sourcePoint" />
-            <mxPoint x="70" y="180" as="targetPoint" />
-          </mxGeometry>
+          <mxGeometry x="620" y="80" width="170" height="30" as="geometry" />
         </mxCell>
         <mxCell id="xlTnr0oYa22tqspzqVBi-65" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;shadow=0;glass=0;sketch=0;fillColor=default;gradientColor=none;size=0.5;" vertex="1" parent="1">
           <mxGeometry x="730" y="545" width="20" height="80" as="geometry" />
@@ -211,20 +160,65 @@
         <mxCell id="xlTnr0oYa22tqspzqVBi-74" value="* nf_hook_ops" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fillColor=default;gradientColor=none;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-75">
           <mxGeometry y="63" width="140" height="21" as="geometry" />
         </mxCell>
-        <mxCell id="xlTnr0oYa22tqspzqVBi-76" value="" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xlTnr0oYa22tqspzqVBi-71" target="xlTnr0oYa22tqspzqVBi-49">
+        <mxCell id="xlTnr0oYa22tqspzqVBi-78" value="调用__nf_register_net_hook注册一个新的ops，会使得变长结构增长。nf_hook_entry按优先级排列，priority值越小，优先级越高，排的越靠前。" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="920" y="300" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="xlTnr0oYa22tqspzqVBi-79" value="指向注册的原始ops" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-45;" vertex="1" parent="1">
+          <mxGeometry x="430" y="625" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xlTnr0oYa22tqspzqVBi-80" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.006;entryY=0.073;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="xlTnr0oYa22tqspzqVBi-71" target="xlTnr0oYa22tqspzqVBi-49">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="910" y="545" as="sourcePoint" />
-            <mxPoint x="1000" y="506" as="targetPoint" />
+            <mxPoint x="960" y="600" as="sourcePoint" />
+            <mxPoint x="1010" y="550" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xlTnr0oYa22tqspzqVBi-77" value="" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="xlTnr0oYa22tqspzqVBi-74" target="xlTnr0oYa22tqspzqVBi-62">
+        <mxCell id="xlTnr0oYa22tqspzqVBi-81" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.006;entryY=0.082;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="xlTnr0oYa22tqspzqVBi-72" target="xlTnr0oYa22tqspzqVBi-56">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="910" y="553" as="sourcePoint" />
-            <mxPoint x="1090" y="399" as="targetPoint" />
+            <mxPoint x="910" y="564" as="sourcePoint" />
+            <mxPoint x="1091" y="412" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xlTnr0oYa22tqspzqVBi-78" value="调用__nf_register_net_hook注册一个新的ops，会使得变长结构增长，" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="950" y="222" width="180" height="70" as="geometry" />
+        <mxCell id="xlTnr0oYa22tqspzqVBi-49" value="struct nf_hook_ops" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=1;shadow=0;glass=0;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="425" width="140" height="182" as="geometry" />
+        </mxCell>
+        <mxCell id="xlTnr0oYa22tqspzqVBi-50" value="+ *hook" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-49">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xlTnr0oYa22tqspzqVBi-51" value="+ *dev" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-49">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xlTnr0oYa22tqspzqVBi-52" value="+ *priv" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-49">
+          <mxGeometry y="78" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xlTnr0oYa22tqspzqVBi-53" value="+ pf" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-49">
+          <mxGeometry y="104" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xlTnr0oYa22tqspzqVBi-54" value="+ hooknum" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-49">
+          <mxGeometry y="130" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xlTnr0oYa22tqspzqVBi-55" value="+ priority" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-49">
+          <mxGeometry y="156" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xlTnr0oYa22tqspzqVBi-56" value="struct nf_hook_ops" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=1;shadow=0;glass=0;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="620" width="140" height="182" as="geometry" />
+        </mxCell>
+        <mxCell id="xlTnr0oYa22tqspzqVBi-57" value="+ *hook" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-56">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xlTnr0oYa22tqspzqVBi-58" value="+ *dev" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-56">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xlTnr0oYa22tqspzqVBi-59" value="+ *priv" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-56">
+          <mxGeometry y="78" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xlTnr0oYa22tqspzqVBi-60" value="+ pf" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-56">
+          <mxGeometry y="104" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xlTnr0oYa22tqspzqVBi-61" value="+ hooknum" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-56">
+          <mxGeometry y="130" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xlTnr0oYa22tqspzqVBi-62" value="+ priority" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xlTnr0oYa22tqspzqVBi-56">
+          <mxGeometry y="156" width="140" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
