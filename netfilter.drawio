@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-01T14:35:04.817Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="fmgH00C0YakPZUSpNDo4" version="20.8.23" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2023-03-01T15:16:14.513Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="7LIFLS8CnKQTi_-SiE85" version="20.8.23" type="github" pages="6">
   <diagram name="第 1 页" id="0HF-bXw9sUiKlREXwIyp">
     <mxGraphModel dx="472" dy="1636" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -889,6 +889,108 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="200" y="570" as="sourcePoint" />
             <mxPoint x="238" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="ALRxdN1NL-ghFqBn_u1g" name="第 6 页">
+    <mxGraphModel dx="1195" dy="617" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VObNm_MdPVWAhANbgZ6H-20" value="" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="90" y="140" width="830" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="VObNm_MdPVWAhANbgZ6H-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="VObNm_MdPVWAhANbgZ6H-2" target="VObNm_MdPVWAhANbgZ6H-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="240" />
+              <mxPoint x="190" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VObNm_MdPVWAhANbgZ6H-2" value="IP_CT_RELATED、&lt;br&gt;IP_CT_RELATED_REPLY、&lt;br&gt;IP_CT_NEW" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="120" y="180" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VObNm_MdPVWAhANbgZ6H-3" value="nf_nat_initialized" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="290" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VObNm_MdPVWAhANbgZ6H-4" value="执行hook（iptables、nftables）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="380" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VObNm_MdPVWAhANbgZ6H-5" value="判断是否做过NAT了" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="195" y="260" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VObNm_MdPVWAhANbgZ6H-6" value="NO" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="195" y="340" width="55" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VObNm_MdPVWAhANbgZ6H-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="320" as="sourcePoint" />
+            <mxPoint x="190" y="380" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="360" />
+              <mxPoint x="190" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VObNm_MdPVWAhANbgZ6H-8" value="ipt_do_table" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="380" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VObNm_MdPVWAhANbgZ6H-9" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="VObNm_MdPVWAhANbgZ6H-4" target="VObNm_MdPVWAhANbgZ6H-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="460" as="sourcePoint" />
+            <mxPoint x="410" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VObNm_MdPVWAhANbgZ6H-10" value="nf_nat_alloc_null_binding" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="470" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VObNm_MdPVWAhANbgZ6H-11" value="这里主要做确保tuple唯一，跟现有已确认的连接不冲突" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="195" y="430" width="195" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VObNm_MdPVWAhANbgZ6H-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="410" as="sourcePoint" />
+            <mxPoint x="190" y="470" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="450" />
+              <mxPoint x="190" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VObNm_MdPVWAhANbgZ6H-13" value="nf_nat_packet" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="560" y="190" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VObNm_MdPVWAhANbgZ6H-14" value="做nat的操作，更改skb的ip和port" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="552.5" y="220" width="195" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VObNm_MdPVWAhANbgZ6H-16" value="1、匹配&lt;br&gt;2、修改tuple" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="350" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VObNm_MdPVWAhANbgZ6H-17" value="return" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="810" y="190" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VObNm_MdPVWAhANbgZ6H-18" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#f5f5f5;strokeColor=#666666;" edge="1" parent="1" source="VObNm_MdPVWAhANbgZ6H-2" target="VObNm_MdPVWAhANbgZ6H-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="270" as="sourcePoint" />
+            <mxPoint x="460" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VObNm_MdPVWAhANbgZ6H-19" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#f5f5f5;strokeColor=#666666;" edge="1" parent="1" source="VObNm_MdPVWAhANbgZ6H-13" target="VObNm_MdPVWAhANbgZ6H-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="215" as="sourcePoint" />
+            <mxPoint x="570" y="215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VObNm_MdPVWAhANbgZ6H-21" value="nf_nat_inet_fn" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="120" y="70" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VObNm_MdPVWAhANbgZ6H-23" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.083;entryY=-0.007;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VObNm_MdPVWAhANbgZ6H-21" target="VObNm_MdPVWAhANbgZ6H-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="100" as="sourcePoint" />
+            <mxPoint x="370" y="50" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
