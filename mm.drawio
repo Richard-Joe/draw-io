@@ -1,101 +1,74 @@
-<mxfile host="app.diagrams.net" modified="2023-03-09T09:41:05.583Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="wPs337LFFcgZiQrQoTb8" version="20.8.23" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-09T12:05:24.606Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="n308_1b_F46yLs7G7aEw" version="20.8.23" type="github">
   <diagram name="第 1 页" id="9pmo1v1dX5s4VO7Nb7Sy">
     <mxGraphModel dx="875" dy="1626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Ivxdmaws9GKIMjuXmD1E-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="200" y="160" width="120" height="40" as="geometry" />
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-1" value="direct mapping" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="200" y="280" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Ivxdmaws9GKIMjuXmD1E-2" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="330" y="200" as="sourcePoint" />
-            <mxPoint x="480" y="200" as="targetPoint" />
+            <mxPoint x="328" y="340" as="sourcePoint" />
+            <mxPoint x="478" y="340" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Ivxdmaws9GKIMjuXmD1E-3" value="0xffff800000000000" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="1">
-          <mxGeometry x="330" y="180" width="146" height="20" as="geometry" />
+          <mxGeometry x="328" y="320" width="146" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Ivxdmaws9GKIMjuXmD1E-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="200" y="119.17" width="120" height="40" as="geometry" />
+          <mxGeometry x="200" y="259.32" width="120" height="20.68" as="geometry" />
         </mxCell>
         <mxCell id="Ivxdmaws9GKIMjuXmD1E-5" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="330" y="159.17000000000002" as="sourcePoint" />
-            <mxPoint x="480" y="159.17000000000002" as="targetPoint" />
+            <mxPoint x="329" y="319.17" as="sourcePoint" />
+            <mxPoint x="479" y="319.17" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Ivxdmaws9GKIMjuXmD1E-6" value="0xffff8e8940000000" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="1">
-          <mxGeometry x="330" y="139.17000000000002" width="146" height="20" as="geometry" />
+          <mxGeometry x="329" y="299.17" width="146" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Ivxdmaws9GKIMjuXmD1E-7" value="PAGE_OFFSET" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="1">
-          <mxGeometry x="90" y="150" width="90" height="19.17" as="geometry" />
+          <mxGeometry x="87.5" y="310" width="90" height="19.17" as="geometry" />
         </mxCell>
         <mxCell id="Ivxdmaws9GKIMjuXmD1E-8" value="内核虚拟地址空间起始地址" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="1">
-          <mxGeometry x="30" y="190" width="150" height="20" as="geometry" />
+          <mxGeometry x="27.5" y="329.17" width="150" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="Ivxdmaws9GKIMjuXmD1E-9" value="vmalloc（32TB）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="200" y="78.34000000000002" width="120" height="40" as="geometry" />
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-9" value="vmalloc（32TB）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="200" y="220" width="120" height="38.49" as="geometry" />
         </mxCell>
         <mxCell id="Ivxdmaws9GKIMjuXmD1E-10" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="330" y="118.34000000000002" as="sourcePoint" />
-            <mxPoint x="480" y="118.34000000000002" as="targetPoint" />
+            <mxPoint x="331" y="258.49" as="sourcePoint" />
+            <mxPoint x="481" y="258.49" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Ivxdmaws9GKIMjuXmD1E-11" value="0xffffa48100000000" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="1">
-          <mxGeometry x="330" y="98.34000000000002" width="146" height="20" as="geometry" />
+          <mxGeometry x="331" y="238.49000000000004" width="146" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Ivxdmaws9GKIMjuXmD1E-12" value="VMALLOC_START" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="1">
-          <mxGeometry x="80" y="110" width="90" height="19.17" as="geometry" />
+          <mxGeometry x="80" y="250.83" width="90" height="19.17" as="geometry" />
         </mxCell>
         <mxCell id="Ivxdmaws9GKIMjuXmD1E-13" value="VMALLOC_END" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="1">
-          <mxGeometry x="90" y="70" width="80" height="19.17" as="geometry" />
-        </mxCell>
-        <mxCell id="Ivxdmaws9GKIMjuXmD1E-14" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="200" y="37.51000000000002" width="120" height="40" as="geometry" />
+          <mxGeometry x="90" y="210" width="80" height="19.17" as="geometry" />
         </mxCell>
         <mxCell id="Ivxdmaws9GKIMjuXmD1E-15" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="330" y="77.51000000000003" as="sourcePoint" />
-            <mxPoint x="480" y="77.51000000000003" as="targetPoint" />
+            <mxPoint x="329" y="219.17000000000002" as="sourcePoint" />
+            <mxPoint x="479" y="219.17000000000002" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Ivxdmaws9GKIMjuXmD1E-16" value="0xffffc480ffffffff" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="1">
-          <mxGeometry x="330" y="57.51000000000002" width="146" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="Ivxdmaws9GKIMjuXmD1E-17" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="200" y="-3.319999999999979" width="120" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="Ivxdmaws9GKIMjuXmD1E-18" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="330" y="36.680000000000035" as="sourcePoint" />
-            <mxPoint x="480" y="36.680000000000035" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Ivxdmaws9GKIMjuXmD1E-19" value="0xffffd271c0000000" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="1">
-          <mxGeometry x="330" y="16.68000000000002" width="146" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="Ivxdmaws9GKIMjuXmD1E-20" value="VMEMMAP_START" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="1">
-          <mxGeometry x="80" y="30" width="90" height="19.17" as="geometry" />
+          <mxGeometry x="329" y="199.17000000000002" width="146" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Ivxdmaws9GKIMjuXmD1E-21" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="200" y="-20" width="120" height="15.85" as="geometry" />
-        </mxCell>
-        <mxCell id="Ivxdmaws9GKIMjuXmD1E-22" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="330" y="-4.149999999999963" as="sourcePoint" />
-            <mxPoint x="480" y="-4.149999999999963" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Ivxdmaws9GKIMjuXmD1E-23" value="0xffffffff80000000" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="1">
-          <mxGeometry x="330" y="-24.149999999999977" width="146" height="20" as="geometry" />
+          <mxGeometry x="200" y="-20" width="120" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Ivxdmaws9GKIMjuXmD1E-24" value="__START_KERNEL_map" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="1">
           <mxGeometry x="40" y="-10" width="130" height="19.17" as="geometry" />
         </mxCell>
         <mxCell id="Ivxdmaws9GKIMjuXmD1E-77" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="200" y="-266" width="570" height="320" as="geometry" />
+          <mxGeometry x="200" y="-266" width="570" height="336" as="geometry" />
         </mxCell>
         <mxCell id="Ivxdmaws9GKIMjuXmD1E-41" value="&lt;font face=&quot;Lucida Console&quot;&gt;.text.*&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="Ivxdmaws9GKIMjuXmD1E-77">
           <mxGeometry y="225.82999999999998" width="120" height="20" as="geometry" />
@@ -170,16 +143,7 @@
           <mxGeometry x="-130" y="36.83000000000004" width="100" height="15.85" as="geometry" />
         </mxCell>
         <mxCell id="Ivxdmaws9GKIMjuXmD1E-31" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Ivxdmaws9GKIMjuXmD1E-77">
-          <mxGeometry y="-33.16999999999996" width="120" height="34.19" as="geometry" />
-        </mxCell>
-        <mxCell id="Ivxdmaws9GKIMjuXmD1E-32" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="Ivxdmaws9GKIMjuXmD1E-77">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="130" y="-33.99999999999994" as="sourcePoint" />
-            <mxPoint x="280" y="-33.99999999999994" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Ivxdmaws9GKIMjuXmD1E-33" value="0xffffffffffffffff" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="Ivxdmaws9GKIMjuXmD1E-77">
-          <mxGeometry x="130" y="-54" width="146" height="20" as="geometry" />
+          <mxGeometry y="-20" width="120" height="21.02" as="geometry" />
         </mxCell>
         <mxCell id="Ivxdmaws9GKIMjuXmD1E-38" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="Ivxdmaws9GKIMjuXmD1E-77">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -201,6 +165,54 @@
             <mxPoint x="130" y="196" as="sourcePoint" />
             <mxPoint x="340" y="187" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-94" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Ivxdmaws9GKIMjuXmD1E-77">
+          <mxGeometry x="1" y="364.49" width="120" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-93" value="cpu_entry_area" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="Ivxdmaws9GKIMjuXmD1E-77">
+          <mxGeometry x="1" y="336" width="120" height="28.49" as="geometry" />
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-95" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="Ivxdmaws9GKIMjuXmD1E-77">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="363.66" as="sourcePoint" />
+            <mxPoint x="280" y="363.66" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-96" value="0xfffffe0000000000" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="Ivxdmaws9GKIMjuXmD1E-77">
+          <mxGeometry x="130" y="343.66" width="146" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-98" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Ivxdmaws9GKIMjuXmD1E-77">
+          <mxGeometry x="1" y="326" width="120" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-99" value="espfix（64M）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="Ivxdmaws9GKIMjuXmD1E-77">
+          <mxGeometry x="1" y="297.51" width="120" height="28.49" as="geometry" />
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-100" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="Ivxdmaws9GKIMjuXmD1E-77">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="325.17" as="sourcePoint" />
+            <mxPoint x="280" y="325.17" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-101" value="0xffffff0000000000" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="Ivxdmaws9GKIMjuXmD1E-77">
+          <mxGeometry x="130" y="305.17" width="146" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-102" value="ESPFIX_BASE_ADDR" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="Ivxdmaws9GKIMjuXmD1E-77">
+          <mxGeometry x="-150" y="316.83" width="125" height="19.17" as="geometry" />
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-111" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Ivxdmaws9GKIMjuXmD1E-77">
+          <mxGeometry y="290" width="120" height="7.51" as="geometry" />
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-22" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="Ivxdmaws9GKIMjuXmD1E-77">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="265.83000000000004" as="sourcePoint" />
+            <mxPoint x="280" y="265.83000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-23" value="0xffffffff80000000" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="Ivxdmaws9GKIMjuXmD1E-77">
+          <mxGeometry x="130" y="245.83" width="146" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-112" value="EFI region" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="Ivxdmaws9GKIMjuXmD1E-77">
+          <mxGeometry y="266" width="120" height="24" as="geometry" />
         </mxCell>
         <mxCell id="Ivxdmaws9GKIMjuXmD1E-75" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Lucida Console;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="Ivxdmaws9GKIMjuXmD1E-41" target="Ivxdmaws9GKIMjuXmD1E-48">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -300,6 +312,54 @@
         </mxCell>
         <mxCell id="Ivxdmaws9GKIMjuXmD1E-86" value="MODULES_END" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="1">
           <mxGeometry x="62.5" y="-210" width="115" height="19.17" as="geometry" />
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-32" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="-286.8299999999999" as="sourcePoint" />
+            <mxPoint x="480" y="-286.8299999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-33" value="0xffffffffffffffff" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="330" y="-306.83" width="146" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-91" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="201" y="148.49" width="120" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-20" value="KASAN_SHADOW_START" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="40" y="138.49" width="131" height="19.17" as="geometry" />
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-14" value="kasan shadow" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="201" y="108.49" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-97" value="CPU_ENTRY_AREA_BASE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="40" y="89.32" width="135" height="19.17" as="geometry" />
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-103" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="201" y="198.49" width="120" height="21.51" as="geometry" />
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-104" value="VMEMMAP_START" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="81" y="188.49" width="90" height="19.17" as="geometry" />
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-105" value="vmemmap" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="201" y="158.49" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-106" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="331" y="197.66000000000003" as="sourcePoint" />
+            <mxPoint x="481" y="197.66000000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-107" value="0xffffd271c0000000" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="331" y="177.66000000000003" width="146" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-108" value="KASAN_SHADOW_END" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="50" y="108.49" width="120" height="19.17" as="geometry" />
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-109" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="201" y="319.17" width="120" height="20.68" as="geometry" />
+        </mxCell>
+        <mxCell id="Ivxdmaws9GKIMjuXmD1E-110" value="&lt;div&gt;[795592.387752] PAGE_OFFSET&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; = 0xffff8e8940000000&lt;/div&gt;&lt;div&gt;[795592.387757] VMALLOC_START&amp;nbsp; &amp;nbsp; &amp;nbsp; = 0xffffa48100000000&lt;/div&gt;&lt;div&gt;[795592.387762] VMALLOC_END&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; = 0xffffc480ffffffff&lt;/div&gt;&lt;div&gt;[795592.387767] VMALLOC_SIZE_TB&amp;nbsp; &amp;nbsp; = 32&lt;/div&gt;&lt;div&gt;[795592.387771] VMEMMAP_START&amp;nbsp; &amp;nbsp; &amp;nbsp; = 0xffffd271c0000000&lt;/div&gt;&lt;div&gt;[795592.387775] CPU_ENTRY_AREA_BASE= 0xfffffe0000000000&lt;/div&gt;&lt;div&gt;[795592.387779] ESPFIX_BASE_ADDR&amp;nbsp; &amp;nbsp;= 0xffffff0000000000&lt;/div&gt;&lt;div&gt;[795592.387784] __START_KERNEL_map = 0xffffffff80000000&lt;/div&gt;&lt;div&gt;[795592.387788] MODULES_VADDR&amp;nbsp; &amp;nbsp; &amp;nbsp; = 0xffffffffc0000000&lt;/div&gt;&lt;div&gt;[795592.387793] MODULES_END&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; = 0xffffffffff000000&lt;/div&gt;&lt;div&gt;[795592.387797] MODULES_LEN&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; = 1056964608&lt;/div&gt;&lt;div&gt;[795592.387802] VSYSCALL_ADDR&amp;nbsp; &amp;nbsp; &amp;nbsp; = 0xffffffffff600000&lt;/div&gt;&lt;div&gt;[795592.387806] FIXADDR_START&amp;nbsp; &amp;nbsp; &amp;nbsp; = 0xffffffffff579000&lt;/div&gt;&lt;div&gt;[795592.387811] FIXADDR_TOP&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; = 0xffffffffff7ff000&lt;/div&gt;&lt;div&gt;[795592.387815] FIXADDR_SIZE&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;= 2646016&lt;/div&gt;&lt;div&gt;[795592.387819] PGDIR_SHIFT&amp;nbsp; &amp;nbsp; &amp;nbsp;= 39&amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;[795592.387824] PGDIR_SIZE&amp;nbsp; &amp;nbsp; &amp;nbsp; = 549755813888&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;[795592.387828] P4D_SHIFT&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;= 39&amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;[795592.387832] P4D_SIZE&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; = 549755813888&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;[795592.387837] PUD_SHIFT&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;= 30&amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;[795592.387841] PUD_SIZE&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; = 1073741824&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;[795592.387845] PMD_SHIFT&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;= 21&amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;[795592.387849] PMD_SIZE&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; = 2097152&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;[795592.387853] PTE_SHIFT&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;= 9&amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;[795592.387857] PAGE_SHIFT&amp;nbsp; &amp;nbsp; &amp;nbsp; = 12&amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;[795592.387861] PAGE_SIZE&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;= 4096&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;[795592.387865] PGDIR_MASK&amp;nbsp; &amp;nbsp; &amp;nbsp; = 0xffffff8000000000&lt;/div&gt;&lt;div&gt;[795592.387870] P4D_MASK&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; = 0xffffff8000000000&lt;/div&gt;&lt;div&gt;[795592.387874] PUD_MASK&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; = 0xffffffffc0000000&lt;/div&gt;&lt;div&gt;[795592.387878] PMD_MASK&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; = 0xffffffffffe00000&lt;/div&gt;&lt;div&gt;[795592.387882] PAGE_MASK&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;= 0xfffffffffffff000&lt;/div&gt;&lt;div&gt;[795592.387887] PTRS_PER_PGD&amp;nbsp; &amp;nbsp; = 512&amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;[795592.387891] PTRS_PER_P4D&amp;nbsp; &amp;nbsp; = 1&amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;[795592.387895] PTRS_PER_PUD&amp;nbsp; &amp;nbsp; = 512&amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;[795592.387899] PTRS_PER_PMD&amp;nbsp; &amp;nbsp; = 512&amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;[795592.387903] PTRS_PER_PTE&amp;nbsp; &amp;nbsp; = 512&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="827" y="-574.15" width="470" height="570" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
