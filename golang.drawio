@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-03-18T17:54:28.658Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="wzTSZSXcl9zQSNu2c66o" version="21.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-19T02:35:14.171Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="SfFTQ-0O_o-HM12VtMB6" version="21.0.6" type="github">
   <diagram name="第 1 页" id="-BiWtIMFoqAlZpXaxyfn">
-    <mxGraphModel dx="2514" dy="871" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2022" dy="617" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -69,7 +69,7 @@
         <mxCell id="FL3PhiT9PTm7MLn6hLmr-22" value="mu：锁&lt;br&gt;&lt;br&gt;read：存放的是readOnly，支持并发读安全。当然，写的时候也是需要使用mu锁的。&lt;br&gt;&lt;br&gt;dirty：存脏数据（跟read相比）&lt;br&gt;&lt;br&gt;misses：计数器。read读取失败时，会尝试从dirty中读取，这时misses加1。misses达到阈值时，进行read和dirty的数据同步。" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;strokeColor=#97D077;" vertex="1" parent="1">
           <mxGeometry x="-250" y="200" width="350" height="135" as="geometry" />
         </mxCell>
-        <mxCell id="FL3PhiT9PTm7MLn6hLmr-23" value="amended：标志位，标识m.dirty和m.read中的数据是否一样，flase 相同，true不相同" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;strokeColor=#97D077;" vertex="1" parent="1">
+        <mxCell id="FL3PhiT9PTm7MLn6hLmr-23" value="amended：标志位，如果dirty中包含了一些不存在与read.m中的key，则设置为true。" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;strokeColor=#97D077;" vertex="1" parent="1">
           <mxGeometry x="400" y="180" width="350" height="55" as="geometry" />
         </mxCell>
         <mxCell id="FL3PhiT9PTm7MLn6hLmr-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Comic Sans MS;fontSize=14;" edge="1" parent="1" source="FL3PhiT9PTm7MLn6hLmr-24" target="FL3PhiT9PTm7MLn6hLmr-25">
