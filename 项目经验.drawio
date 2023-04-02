@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-04-02T06:46:55.445Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="kRBXwf1cslKnW2PWvg4s" version="21.0.8" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-04-02T10:11:14.350Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="sIqUkZD-A_cEXBNsb-_2" version="21.0.8" type="github" pages="3">
   <diagram name="多网分离" id="2_jXlie76_IXU0ljbBfu">
-    <mxGraphModel dx="1195" dy="617" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1195" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -344,6 +344,111 @@
         </mxCell>
         <mxCell id="S5EKmCh5LUM70Vl8Q-sG-9" value="VPC网络" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="530" y="790" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="sR27ALyP1tvracQpL6O4" name="创建k8s集群">
+    <mxGraphModel dx="1434" dy="740" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-31" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="60" width="450" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-20" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="400" width="520" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZMOcXZxm5A5HOn3Mu4mN-2" target="ZMOcXZxm5A5HOn3Mu4mN-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-2" value="" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="70" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZMOcXZxm5A5HOn3Mu4mN-3" target="ZMOcXZxm5A5HOn3Mu4mN-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZMOcXZxm5A5HOn3Mu4mN-3" target="ZMOcXZxm5A5HOn3Mu4mN-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="460" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="240" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-3" value="平台" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZMOcXZxm5A5HOn3Mu4mN-5" target="ZMOcXZxm5A5HOn3Mu4mN-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZMOcXZxm5A5HOn3Mu4mN-5" target="ZMOcXZxm5A5HOn3Mu4mN-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-5" value="ke-controller" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-6" value="云梯server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="260" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZMOcXZxm5A5HOn3Mu4mN-8" target="ZMOcXZxm5A5HOn3Mu4mN-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="730" y="540" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="730" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-8" value="云梯agent" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="420" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZMOcXZxm5A5HOn3Mu4mN-9" target="ZMOcXZxm5A5HOn3Mu4mN-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-9" value="ke-agent" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="520" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-16" value="1.创建k8s" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="70" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-17" value="2.创建 Cluster对象" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="70" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-18" value="3.申请虚拟机" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="150" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-19" value="k8s集群" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="640" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-21" value="4.创建虚拟机实例&lt;br&gt;并配置IP，网关" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="425" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-24" value="5.下发创建k8s任务" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="620" y="150" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-25" value="" style="shape=link;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="ZMOcXZxm5A5HOn3Mu4mN-8" target="ZMOcXZxm5A5HOn3Mu4mN-6">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="460" y="310" as="sourcePoint" />
+            <mxPoint x="560" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-29" value="6.收到任务" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="610" y="510" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-30" value="7.创建k8s" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="584.5" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-32" value="kubernetes engine" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="780" y="60" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMOcXZxm5A5HOn3Mu4mN-33" value="用户k8s节点" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="770" y="670" width="70" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
