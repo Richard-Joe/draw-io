@@ -1,5 +1,5 @@
-<mxfile host="app.diagrams.net" modified="2023-04-05T07:52:06.633Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="5Ok4O7_KIIzJ0UWbtX-h" version="21.1.2" type="github" pages="2">
-  <diagram name="第 1 页" id="Nb5IXyK1JuDazcwR1EP6">
+<mxfile host="app.diagrams.net" modified="2023-04-05T09:26:44.563Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="LvvEG4kf4tudf7StEiaS" version="21.1.2" type="github" pages="3">
+  <diagram name="ipvs-hook" id="Nb5IXyK1JuDazcwR1EP6">
     <mxGraphModel dx="2022" dy="617" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -142,7 +142,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="bKLBo4ssmLD07pADuglC" name="第 2 页">
+  <diagram id="bKLBo4ssmLD07pADuglC" name="ipvs-test-topo">
     <mxGraphModel dx="1195" dy="617" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -201,7 +201,7 @@
             <mxPoint x="820" y="290" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-zAF9fwOarJnG1TRg4sx-15" value="&lt;b&gt;IP: 100.0.0.1/24&lt;br&gt;Route:&amp;nbsp;100.100.100.100/32 dev veth2_ns&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="-zAF9fwOarJnG1TRg4sx-15" value="&lt;b&gt;IP: 100.0.0.2/24&lt;br&gt;Route:&amp;nbsp;100.100.100.100/32 dev veth2_ns&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="520" y="160" width="240" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-zAF9fwOarJnG1TRg4sx-16" value="br0" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
@@ -233,6 +233,50 @@
               <mxPoint x="260" y="310" />
               <mxPoint x="200" y="280" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vfJMlR6atgEC0r89HJno-1" value="&lt;b&gt;mode: NAT&lt;br&gt;dest: 100.0.0.1&lt;br&gt;dest: 100.0.0.2&lt;br&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="420" width="100" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="-pybceitlNMbY67zZKVY" name="第 3 页">
+    <mxGraphModel dx="2022" dy="617" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MRsvWuQqJ5onnluyFUwx-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MRsvWuQqJ5onnluyFUwx-1" target="MRsvWuQqJ5onnluyFUwx-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MRsvWuQqJ5onnluyFUwx-1" value="curl 100.100.100.100:80" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="160" width="145" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MRsvWuQqJ5onnluyFUwx-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MRsvWuQqJ5onnluyFUwx-2" target="MRsvWuQqJ5onnluyFUwx-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MRsvWuQqJ5onnluyFUwx-2" value="ip_queue_xmit" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="160" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MRsvWuQqJ5onnluyFUwx-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MRsvWuQqJ5onnluyFUwx-3" target="MRsvWuQqJ5onnluyFUwx-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MRsvWuQqJ5onnluyFUwx-3" value="查路由" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="160" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MRsvWuQqJ5onnluyFUwx-4" value="LOCAL_OUT" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="160" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MRsvWuQqJ5onnluyFUwx-5" value="由于ipvs0设备的存在，且配置了100.100.100.100的IP地址，查完路由就走本机流量了，所以进LOCAL_OUT" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="170" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MRsvWuQqJ5onnluyFUwx-6" value="路由local表：&lt;br&gt;local &lt;b&gt;100.100.100.100&lt;/b&gt; dev &lt;b&gt;ipvs0 &lt;/b&gt;proto kernel scope host src 100.100.100.100" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="40" width="440" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MRsvWuQqJ5onnluyFUwx-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="MRsvWuQqJ5onnluyFUwx-6" target="MRsvWuQqJ5onnluyFUwx-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="300" as="sourcePoint" />
+            <mxPoint x="490" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
