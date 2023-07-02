@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-07-02T06:05:06.827Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="YGGJ8WmWEjiNm8fm3DC7" version="21.2.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-02T08:41:03.931Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="MGLTuiPpH4XvXHpwJT6P" version="21.2.1" type="github">
   <diagram name="第 1 页" id="gMGXaRhbQjXeQtGGSrd3">
-    <mxGraphModel dx="4522" dy="2741" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3703" dy="2292" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -377,8 +377,8 @@
         <mxCell id="AFxvPeA2e7Iyxpf63gBD-27" value="kernel route" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;strokeWidth=1;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1117.5" y="800" width="120" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="AFxvPeA2e7Iyxpf63gBD-28" value="pod-to-pod" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;strokeWidth=1;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="120" y="610" width="120" height="35" as="geometry" />
+        <mxCell id="AFxvPeA2e7Iyxpf63gBD-28" value="1. 同节点pod，直接重定向&lt;br&gt;2. 跨节点pod，走隧道或路由" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#2D7600;strokeWidth=1;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="120" y="610" width="170" height="35" as="geometry" />
         </mxCell>
         <mxCell id="AFxvPeA2e7Iyxpf63gBD-29" value="MASQUERADE" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;strokeWidth=1;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-330" y="980" width="120" height="35" as="geometry" />
@@ -424,8 +424,8 @@
             <mxPoint x="555" y="45" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="AFxvPeA2e7Iyxpf63gBD-44" value="【external-to-LB service】&lt;br&gt;Call-Stack：&lt;br&gt;handle_xgress(ctx)&lt;br&gt;&amp;nbsp; - __tail_handle_ipv4(ctx)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; -&amp;nbsp;tail_handle_ipv4_cont(ctx)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; -&amp;nbsp;handle_ipv4_from_lxc(ctx)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; -&amp;nbsp;lookup_ip4_endpoint(ip4)&amp;nbsp; // 找到，说明访问local host&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;-&amp;nbsp;ctx_redirect(ctx, HOST_IFINDEX, BPF_F_INGRESS);&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - 找不到，访问远端host，则丢给协议栈" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#2D7600;fillColor=none;fontColor=#000000;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="2100" y="1370" width="380" height="140" as="geometry" />
+        <mxCell id="AFxvPeA2e7Iyxpf63gBD-44" value="【external-to-LB service】&lt;br&gt;Call-Stack：&lt;br&gt;如果是iptables模式：iptables DNAT将svc ip 转为 pod ip&lt;br&gt;如果是ipvs模式：ipvs中nat将svc ip 转为 pod ip&lt;br&gt;[section: from-host]&lt;br&gt;from_host(ctx)&lt;br&gt;&amp;nbsp; - tail_handle_ipv4(ctx)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; - handle_ipv4(ctx)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; -&amp;nbsp;ipv4_local_delivery() // 如果是本端endpoint&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - tail_call_dynamic(ctx, &amp;amp;POLICY_CALL_MAP, ep-&amp;gt;lxc_id);&amp;nbsp;&amp;nbsp;// 执行policy map&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;-&amp;nbsp;重定向到pod&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - 远端 endpoint，走隧道或路由" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#2D7600;fillColor=none;fontColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="2100" y="1345" width="480" height="190" as="geometry" />
         </mxCell>
         <mxCell id="AFxvPeA2e7Iyxpf63gBD-46" value="external" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;strokeColor=#3333FF;strokeWidth=1;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1620" y="1400" width="120" height="80" as="geometry" />
@@ -440,23 +440,13 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="AFxvPeA2e7Iyxpf63gBD-52" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fillColor=#60a917;strokeColor=#2D7600;shadow=0;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="AFxvPeA2e7Iyxpf63gBD-43" target="AFxvPeA2e7Iyxpf63gBD-55">
+        <mxCell id="AFxvPeA2e7Iyxpf63gBD-52" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fillColor=#60a917;strokeColor=#2D7600;shadow=0;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="AFxvPeA2e7Iyxpf63gBD-65" target="AFxvPeA2e7Iyxpf63gBD-55">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1825" y="1416" as="sourcePoint" />
-            <mxPoint x="2060" y="1075" as="targetPoint" />
+            <mxPoint x="1920" y="610" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1980" y="840" />
-              <mxPoint x="2060" y="480" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="AFxvPeA2e7Iyxpf63gBD-53" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fillColor=#60a917;strokeColor=#2D7600;shadow=0;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="AFxvPeA2e7Iyxpf63gBD-45" target="AFxvPeA2e7Iyxpf63gBD-55">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="2060" y="1040" as="sourcePoint" />
-            <mxPoint x="1670" y="530" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="1970" y="820" />
-              <mxPoint x="1990" y="480" />
+              <mxPoint x="2020" y="910" />
+              <mxPoint x="1970" y="470" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -512,6 +502,20 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1156" y="1640" as="sourcePoint" />
             <mxPoint x="1930" y="1230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AFxvPeA2e7Iyxpf63gBD-68" value="1. 同节点pod，直接重定向&lt;br&gt;2. 跨节点pod，走隧道或路由" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#2D7600;strokeWidth=1;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1895" y="835" width="170" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="AFxvPeA2e7Iyxpf63gBD-70" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fillColor=#60a917;strokeColor=#2D7600;shadow=0;strokeWidth=2;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="AFxvPeA2e7Iyxpf63gBD-65" target="pFs_SzHBFSE5JqzF3wSR-121">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1900" y="1040" as="sourcePoint" />
+            <mxPoint x="1450" y="650" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1990" y="810" />
+              <mxPoint x="1920" y="590" />
+              <mxPoint x="1530" y="690" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
