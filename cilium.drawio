@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-03T08:07:45.580Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="gza60juI7Ig92Win4I5l" version="21.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-04T07:41:54.686Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="FslqZdUe-B5ePMDza92Y" version="21.5.2" type="github">
   <diagram name="第 1 页" id="gMGXaRhbQjXeQtGGSrd3">
     <mxGraphModel dx="2704" dy="1717" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -8,7 +8,7 @@
           <mxGeometry x="960" y="160" width="1680" height="1100" as="geometry" />
         </mxCell>
         <mxCell id="pFs_SzHBFSE5JqzF3wSR-123" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=1;fillColor=none;dashed=1;dashPattern=12 12;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
-          <mxGeometry x="-570" y="160" width="1480" height="1100" as="geometry" />
+          <mxGeometry x="-570" y="200" width="1480" height="1060" as="geometry" />
         </mxCell>
         <mxCell id="AFxvPeA2e7Iyxpf63gBD-72" value="POLICY_MAP" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="1897.5" y="710" width="165" height="30" as="geometry" />
@@ -190,10 +190,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="pFs_SzHBFSE5JqzF3wSR-34" value="【pod-to-host】&lt;br&gt;Call-Stack：&lt;br&gt;handle_xgress(ctx)&lt;br&gt;&amp;nbsp; - __tail_handle_ipv4(ctx)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; -&amp;nbsp;tail_handle_ipv4_cont(ctx)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; -&amp;nbsp;handle_ipv4_from_lxc(ctx)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; -&amp;nbsp;lookup_ip4_endpoint(ip4)&amp;nbsp; // 找到，说明访问local host&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;-&amp;nbsp;ctx_redirect(ctx, HOST_IFINDEX, BPF_F_INGRESS);&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - 找不到，访问远端host，则丢给协议栈" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#BD7000;fillColor=none;fontColor=#000000;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="-1010" y="895" width="380" height="140" as="geometry" />
+        <mxCell id="pFs_SzHBFSE5JqzF3wSR-34" value="【pod-to-host】&lt;br&gt;Call-Stack：&lt;br&gt;handle_xgress(ctx)&lt;br&gt;&amp;nbsp; - __tail_handle_ipv4(ctx)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; -&amp;nbsp;tail_handle_ipv4_cont(ctx)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; -&amp;nbsp;handle_ipv4_from_lxc(ctx)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; -&amp;nbsp;lookup_ip4_endpoint(ip4)&amp;nbsp; // 找到，说明访问local host&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// 如果是发给本端host，且开启了ENABLE_HOST_FIREWALL，&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// 重定向给cilium_host&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;-&amp;nbsp;ctx_redirect(ctx, HOST_IFINDEX, BPF_F_INGRESS);&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // 如果是远端host，则走隧道&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // 后续放通到协议栈" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#BD7000;fillColor=none;fontColor=#000000;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-1030" y="740" width="430" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="pFs_SzHBFSE5JqzF3wSR-38" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fillColor=#f0a30a;strokeColor=#BD7000;shadow=0;strokeWidth=2;" parent="1" source="pFs_SzHBFSE5JqzF3wSR-7" edge="1">
+        <mxCell id="pFs_SzHBFSE5JqzF3wSR-38" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fillColor=#f0a30a;strokeColor=#BD7000;shadow=0;strokeWidth=2;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="pFs_SzHBFSE5JqzF3wSR-7" edge="1" target="pFs_SzHBFSE5JqzF3wSR-113">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="190" y="370" as="sourcePoint" />
             <mxPoint x="10" y="870" as="targetPoint" />
@@ -307,7 +307,7 @@
         <mxCell id="pFs_SzHBFSE5JqzF3wSR-97" value="" style="endArrow=classic;html=1;rounded=0;sketch=0;strokeColor=#BD7000;strokeWidth=1.5;dashed=1;exitX=1.004;exitY=0.525;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="pFs_SzHBFSE5JqzF3wSR-34" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-10" y="623" as="sourcePoint" />
-            <mxPoint x="-50" y="810" as="targetPoint" />
+            <mxPoint x="-140" y="550" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="pFs_SzHBFSE5JqzF3wSR-98" value="【vxlan模式】【跨节点pod-to-pod】&lt;br&gt;请求端 Call-Stack：&lt;br&gt;[section: from-container]&lt;br&gt;handle_xgress(ctx)&lt;br&gt;&amp;nbsp; - __tail_handle_ipv4(ctx)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; -&amp;nbsp;tail_handle_ipv4_cont(ctx)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; -&amp;nbsp;handle_ipv4_from_lxc(ctx)&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; -&amp;nbsp;encap_and_redirect_lxc(...)&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; -&amp;nbsp;__encap_and_redirect_with_nodeid(...)&amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;-&amp;nbsp;__encap_with_nodeid(...)&amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;-&amp;nbsp;ctx_redirect(ctx, ENCAP_IFINDEX, 0); 重定向到cilium_vxlan&lt;br&gt;[section: to-overlay]&lt;br&gt;to_overlay(ctx)&lt;br&gt;&amp;nbsp; -&amp;nbsp;handle_nat_fwd(ctx)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// 不需要snat&lt;br&gt;&amp;nbsp; // 丢给内核协议栈&lt;br&gt;[section: to_netdev]&lt;br&gt;to_netdev(ctx)&lt;br&gt;&amp;nbsp; &amp;nbsp;- 无处理&lt;br&gt;&lt;br&gt;响应端 Call-Stack：&lt;br&gt;[section: from_netdev]&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;from_netdev(ctx)&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp; &amp;nbsp;- 啥也没干，扔回了内核&lt;br&gt;内核vxlan解包后，扔给了vxlan设备&lt;br&gt;[section: from-overlay]&lt;br&gt;from-overlay(ctx)&lt;br&gt;&amp;nbsp; -&amp;nbsp;ep_tail_call(ctx, CILIUM_CALL_IPV4_FROM_OVERLAY);&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;-&amp;nbsp;tail_handle_ipv4(...)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; -&amp;nbsp;handle_ipv4(...)&amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; -&amp;nbsp;lookup_ip4_endpoint(...)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; -&amp;nbsp;ipv4_local_delivery()&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; -&amp;nbsp;tail_call_dynamic(ctx, &amp;amp;POLICY_CALL_MAP, ep-&amp;gt;lxc_id);&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - redirect_ep(ctx, ifindex, ...)&amp;nbsp; // 重定向到endpoint" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeWidth=2;strokeColor=#00CCCC;" parent="1" vertex="1">
@@ -524,14 +524,35 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="_YqKwRygN7glOn4jhvMX-1" value="&lt;b&gt;IPSEC&lt;/b&gt;模式下，ingress方向加载的是 from-network" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=1;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="_YqKwRygN7glOn4jhvMX-1" value="&lt;b&gt;IPSEC&lt;/b&gt;模式下，ingress方向加载的是 from-network" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=1;fillColor=none;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="50" y="665" width="150" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="_YqKwRygN7glOn4jhvMX-3" value="当开启了 &lt;b&gt;host-firewall &lt;/b&gt;或 &lt;b&gt;bpf-nodeport&lt;/b&gt; 时，才会加载from-netdev 和 to-netdev" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=1;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="_YqKwRygN7glOn4jhvMX-3" value="当开启了 &lt;b&gt;host-firewall &lt;/b&gt;或 &lt;b&gt;bpf-nodeport&lt;/b&gt; 时，才会加载from-netdev 和 to-netdev" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=1;fillColor=none;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="-260" y="1189.75" width="170" height="48.5" as="geometry" />
         </mxCell>
-        <mxCell id="_YqKwRygN7glOn4jhvMX-4" value="1. 同节点host，丢给协议栈&lt;br&gt;2. 跨节点host，走隧道或路由" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#2D7600;strokeWidth=1;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="10" y="855" width="170" height="35" as="geometry" />
+        <mxCell id="_YqKwRygN7glOn4jhvMX-4" value="1. 同节点host，丢给协议栈&lt;br&gt;2. 跨节点host，走隧道或路由" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#2D7600;strokeWidth=1;fillColor=none;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="-210" y="600" width="170" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="p-zXUY56XYS56oVlxuI5-1" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.412;exitY=1.017;exitDx=0;exitDy=0;fillColor=#f0a30a;strokeColor=#BD7000;shadow=0;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="pFs_SzHBFSE5JqzF3wSR-39" target="p-zXUY56XYS56oVlxuI5-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-200" y="360" as="sourcePoint" />
+            <mxPoint x="20" y="880" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-140" y="630" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p-zXUY56XYS56oVlxuI5-2" value="kernel stack" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;strokeWidth=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-252.5" y="645" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="p-zXUY56XYS56oVlxuI5-3" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fillColor=#f0a30a;strokeColor=#BD7000;shadow=0;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-140" y="540" as="sourcePoint" />
+            <mxPoint x="-30" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-130" y="640" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
